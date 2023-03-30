@@ -1,0 +1,18 @@
+= docker-buildroot_am3352_aki
+
+https://qiita.com/rukihena/items/4bc45330b0589c5cbe15[秋月謎SoC基板用の buildroot_am3352_aki をカスタマイズしてsshログインしてみる] と同じビルドをDocker上で行うための一式
+
+== Usage
+
+上記記事の追加パラメータは `config-fragment` にまとめています。このファイルを編集すればrootパスワードなどを変更可能です。
+カスタマイズ後に以下を実行すれば `sdcard.img` が生成されるはずです。
+
+ ./build.sh
+
+`sdcard.img` は https://www.raspberrypi.com/software/[Raspberry Pi Imager] などでSDカードに焼くといいでしょう。
+
+== References
+
+* https://qiita.com/rukihena/items/4bc45330b0589c5cbe15[秋月謎SoC基板用の buildroot_am3352_aki をカスタマイズしてsshログインしてみる]
+* https://www.raspberrypi.com/software/[Raspberry Pi Imager]
+* https://github.com/bakueikozo/buildroot_am3352_aki[bakueikozo/buildroot_am3352_aki]
